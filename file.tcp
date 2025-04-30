@@ -1,0 +1,19 @@
+# Open the input file for reading
+set inFile [open "input.txt" r]
+set content [read $inFile]
+close $inFile
+
+# Trim any unwanted whitespace (optional)
+set content [string trim $content]
+
+# Create or open the output file for writing
+set outFile [open "output.txt" w]
+
+# Write the content two times
+puts $outFile $content
+puts $outFile $content
+
+# Close the file
+close $outFile
+
+puts "Content written twice into output.txt"
