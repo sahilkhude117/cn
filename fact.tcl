@@ -16,3 +16,20 @@ for {set i 1} {$i <= $num} {incr i} {
 
 # Print the result
 puts "Factorial of $num is $fact"
+
+
+
+
+
+
+
+
+ 
+#!usr/bin/tclsh 
+puts "Enter a number : " 
+set num [gets stdin] 
+set f 1 
+for {set i $num} {$i > 0} {incr i -1} { 
+set f [expr {$f * $i}] 
+} 
+puts "The factorial of $num is $f” 

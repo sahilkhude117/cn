@@ -17,3 +17,15 @@ puts $outFile $content
 close $outFile
 
 puts "Content written twice into output.txt"
+
+
+
+#!/usr/bin 
+set fp [open "/home/dbit/Desktop/IT41/try.txt" r] 
+set file_data [read $fp] 
+close $fp 
+set fpr [open "/home/dbit/Desktop/IT41/try2.txt" w] 
+for {set i 2} {$i > 0} {incr i -1} { 
+puts $fpr $file_data 
+} 
+close $fpr 
